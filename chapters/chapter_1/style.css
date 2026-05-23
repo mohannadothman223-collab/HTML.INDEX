@@ -1,0 +1,54 @@
+/* Global page styling for the steak recipe */
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #fff4eb 0%, #f9e2d0 100%);
+  color: #3d2b20;
+  background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 180px),
+                    radial-gradient(circle at bottom right, rgba(255, 210, 190, 0.9), transparent 240px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+  color: #8a2f13;
+}
+
+h2 {
+  color: #783218;
+  margin-top: 24px;
+}
+
+p {
+  max-width: 720px;
+  margin: 0 auto 20px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+ul,
+ol {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.recipe-image {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  border: 3px solid #d69b7c;
+  box-shadow: 0 18px 30px rgba(110, 60, 30, 0.18);
+}
