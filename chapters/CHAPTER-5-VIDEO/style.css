@@ -1,0 +1,106 @@
+
+:root {
+    --bg: #07111f;
+    --panel: rgba(13, 28, 46, 0.78);
+    --accent: #7dd3fc;
+    --accent-strong: #38bdf8;
+    --text: #f8fbff;
+    --muted: #cbd5e1;
+    --shadow: 0 28px 90px rgba(8, 15, 30, 0.65);
+    --border: rgba(125, 211, 252, 0.28);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    font-family: "Segoe UI", "Tahoma", sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top, rgba(56, 189, 248, 0.2), transparent 18%),
+        linear-gradient(135deg, #020817, #0b1220 55%, #111827);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    width: min(100%, 860px);
+    text-align: center;
+}
+
+.hero {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--accent);
+    font-size: 0.8rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 4vw, 3.1rem);
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.subtitle {
+    max-width: 640px;
+    margin: 12px auto 0;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.player-card {
+    width: min(100%, 560px);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: min(100%, 520px);
+    aspect-ratio: 1 / 1;
+    display: block;
+    border-radius: 12px;
+    background: #000;
+    outline: none;
+    object-fit: cover;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 16px;
+    }
+
+    .player-card {
+        width: min(100%, 420px);
+        aspect-ratio: 1 / 1;
+        padding: 10px;
+        border-radius: 16px;
+    }
+
+    video {
+        width: min(100%, 380px);
+    }
+
+    h1 {
+        letter-spacing: 0.05em;
+    }
+}
